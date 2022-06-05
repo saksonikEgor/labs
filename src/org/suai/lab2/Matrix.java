@@ -1,3 +1,21 @@
+/*
+ОСНОВНОЕ ЗАДАНИЕ:
+Напишите класс Matrix, реализующий квадратные матрицы. В нем должны быть определены
+
+конструктор с целочисленным параметром --- размером матрицы, создающий единичную матрицу;	
+методы Matrix sum(Matrix) и Matrix product(Matrix), вычисляющие сумму и произведение матриц	
+матрицы setElement(int row, int column, int value) и getElement(int row, int column), для 	обращения к 	элементам матрицы;
+метод 	toString() (Примечание: необходимо использовать StringArray или StringBuilder).
+
+Во всех методах предполагается, что передаваемые параметры всегда корректны.
+Напишите программу, выводящую первые 10 степеней матрицы:
+[1 1]
+[1 0]
+
+ДОПОЛНИТЕЛЬНОЕ ЗАДАНИЕ:
+добавить метод void doGauss(), который выполняет над матрицей приведение Гаусса
+*/
+
 package org.suai.lab2;
 
 public class Matrix {
@@ -54,7 +72,7 @@ public class Matrix {
         }
         return sb.toString();
     }
-/*
+    
     public void doGauss(){
         for (int j = 0; j < this.n - 1; j++) {
             for (int i = j + 1; i < this.n; i++) {
@@ -67,8 +85,6 @@ public class Matrix {
             }
         }
     }
-
- */
 
     public static void main(String[] args){
         Matrix m1 = new Matrix(2);
