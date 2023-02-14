@@ -9,3 +9,7 @@
 ### saveToBinaryFile(String filename)  
 ### loadFromTextFile(String filename)  
 ### saveToTextFile(String filename)  
+
+# Доп. задание
+
+Создайте класс для хранения графа с методами для записи/чтения его из текстового/бинарного файлов.
