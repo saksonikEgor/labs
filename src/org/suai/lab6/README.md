@@ -27,3 +27,14 @@ main(..) {
 
 Пример вызова: java EncodingConverter in.txt out.txt utf8 cp1251  
  
+# Доп. задание
+
+Сделать класс TranslateWriter, который записывает строку (по возможности с переводом) в файл (словарь (Dictionary) сделан с помощью HashMap).
+```     
+Dictionary dic = new Dictionary();
+dic.add(“home”, “дом”);
+….
+TranlateWriter wr = new TranslateWriter(new FileWriter(“out.txt”), dic);
+wr.write(“my sweet home”);
+// out.txt -> my sweet дом
+```
